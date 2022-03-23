@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Boolean Hooligans Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        margin: 0;
+      }
+
+      a:link {
+        color: blue;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      /* Style the header */
+      .header {
+        background-color: #f1f1f1;
+        padding: 15px;
+        text-align: center;
+      }
+
+      img {
+        border-radius: 10px;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        background-image: linear-gradient(
+          to left,
+          rgba(60, 67, 232, 1) 0%,
+          rgba(60, 67, 232, 1) 0.009999999747378752%,
+          rgba(44, 173, 190, 1) 100%
+        );
+      }
+
+      footer {
+        text-align: center;
+        margin: auto;
+        display: block;
+        width: 100%;
+        height: 70px;
+        color: white;
+        background-image: linear-gradient(
+          to left,
+          rgba(60, 67, 232, 1) 0%,
+          rgba(60, 67, 232, 1) 0.009999999747378752%,
+          rgba(44, 173, 190, 1) 100%
+        );
+      }
+
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        margin: auto;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px 20px;
+        text-decoration: none;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        color: black;
+      }
+
+      .about {
+        display: block;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        letter-spacing: 0%;
+        font-family: Roboto, sans-serif;
+      }
+
+      .products {
+        display: block;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        letter-spacing: 0%;
+        font-family: Roboto, sans-serif;
+      }
+
+      .button {
+        border: none;
+        color: white;
+        background-color: #008cba;
+        padding: 8px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .button2 {
+        background-color: white;
+        color: black;
+        border: 2px solid #008cba;
+      }
+
+      .button2:hover {
+        background-color: #008cba;
+        color: white;
+      }
+
+      .divider {
+        width: 100%;
+        height: 1px;
+        margin: 10px auto;
+        background: blue;
+        border-bottom: 1px solid black;
+      }
+      .right{
+        width:200 px; 
+        overflow: hidden; 
+        border: 1px solid #ff1100;
+        clear: both;
+        margin-bottom: 10px;
+      }
+      #btnScrollToTop {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width:50px; 
+        height: 50px; 
+        border-radius: 50%; 
+        background: #e62739; 
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.25);
+        color: #ffffff; 
+        border:none; 
+        outline: none; 
+        cursor: pointer; 
+      }
+      #btnScrollToTop:active{
+        background: #cc2333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <nav>
+          <a href="/login">Sign-In </a>
+          <a href="/register">Sign-Up</a>
+      </nav>
+    </div>
+    <div style="text-align: center; margin: auto">
+      <h1 style="font-size: 40px">Survey Hooligans</h1>
+  <!-- Button To Scroll To Top-->  
+      <button id ="btnScrollToTop">
+        <i class = "material-icons">arrow_upward</i>
+      </button>
+      <script>
+        const btnScrollToTop = document.querySelector("#btnScrollToTop"); 
+        btnScrollToTop.addEventListener("click", function() {
+          window.scrollTo ({
+            top:0,
+            left:0,
+            behavior: "smooth"
+          });
+        });
+      </script>
+ <!-- Button To Scroll To Top -->      
+            
+      <h4 style="width: 30%; margin: auto; padding: 30px">
+        81% of businesses who tracked their "Hooligans" for honest feedback
+        increased productivity!!!! Join them and SIGN UP NOW!
+      </h4>
+
+      <a style="margin: 20px" class="button button2" href="/register">Sign up</a>
+
+      <div class="divider"></div>
+
+      <section id="about" class="about">
+        <h1 style="height: 100px">About Boolean Hooligans</h1>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="products" class="products">
+        <h1 style="height: 100px">Our Products</h1>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p style="padding-top: 30px">Copyright Boolean Hooligans 2022</p>
+    </footer>
+  </body>
+</html>
